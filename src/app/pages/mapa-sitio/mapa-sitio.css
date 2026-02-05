@@ -1,0 +1,77 @@
+:host {
+    display: block;
+    min-width: 1000px; /* Fuerza scroll si la pantalla es pequeña */
+    background-color: #f1f5f9;
+}
+
+.contenedor-maestro {
+    display: block;      /* Comportamiento estándar de bloque */
+    width: 900px;        /* Ancho total fijo */
+    margin: 40px auto;   /* Centrado automático */
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #ccc;
+}
+
+.cabecera {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+}
+
+h1 {
+    font-size: 28px;
+    color: #000;
+}
+
+/* --- TARJETAS --- */
+
+.area-tarjetas {
+    display: block;
+    width: 100%;
+}
+
+.tarjeta {
+    /* Aquí la magia para ponerlos al lado sin flex */
+    display: inline-block; 
+    width: 400px;        /* Ancho fijo exacto */
+    height: 120px;       /* Alto fijo */
+    vertical-align: top; /* Se alinean arriba */
+    
+    box-sizing: border-box; /* Para que el padding no rompa el ancho */
+    border: 1px solid #999;
+    padding: 20px;
+    margin-right: 15px;  /* Espacio a la derecha */
+    margin-bottom: 15px; /* Espacio abajo */
+    background-color: #fff;
+}
+
+/* --- DENTRO DE LA TARJETA --- */
+
+.icono {
+    display: inline-block; /* Icono al lado del texto */
+    vertical-align: middle;
+    width: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contenido {
+    display: inline-block; /* Texto al lado del icono */
+    vertical-align: middle;
+    width: 290px; /* Calculado para que quepa (400 - 60 - padding) */
+    padding-left: 10px;
+}
+
+.contenido h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000080; /* Azul marino clásico */
+}
+
+.contenido p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #333;
+}

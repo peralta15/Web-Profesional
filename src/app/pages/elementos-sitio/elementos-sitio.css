@@ -1,0 +1,97 @@
+/* Badge superior */
+.badge-category {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h4 {
+  color: #074564; /* Un azul marino oscuro muy elegante */
+  text-transform: uppercase; /* Opcional: para que se vea como un subtítulo de sección */
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  color: #055983;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px; /* Un azul marino oscuro muy elegante */
+}
+
+.intro-text {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Grid de Beneficios */
+.benefits-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.benefit-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  border-color: #2563eb;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card h4 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* Lista de Tipos de Estructura */
+.structure-types {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.type-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  flex: 1;
+  min-width: 180px;
+}
+
+.type-label {
+  font-weight: 800;
+  color: #2563eb;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.type-item p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #64748b;
+}

@@ -1,0 +1,55 @@
+/* Tarjeta de Bienvenida */
+.welcome-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  border-left: 6px solid #2563eb; /* Línea de color de marca */
+}
+
+/* Estilo del Título */
+.welcome-card h3 {
+  color: #1e293b; /* El azul oscuro que elegimos para los h5 */
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 10px 0 20px 0;
+}
+
+/* Badge de saludo */
+.badge-welcome {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Texto principal */
+.lead-text {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Caja de características internas */
+.feature-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.feature-box p {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.thanks-note {
+  font-style: italic;
+  color: #64748b;
+  font-weight: 500;
+}

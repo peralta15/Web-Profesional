@@ -1,0 +1,86 @@
+/* Contenedor Principal Centrado */
+.main-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Encabezado */
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.badge-category {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 15px 0;
+}
+
+.intro-text {
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Rejilla de Tarjetas */
+.elements-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.element-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.element-card:hover {
+  transform: translateX(8px);
+  border-color: #2563eb;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.05);
+}
+
+/* Icono y Títulos */
+.element-icon {
+  background: #f8fafc;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.element-body h4 {
+  color: #2563eb; /* Color azul solicitado */
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.element-body p {
+  color: #475569;
+  margin: 0;
+  line-height: 1.5;
+}

@@ -1,0 +1,66 @@
+<div class="main-container">
+  <header class="page-header">
+    <h1>Búsqueda en el sitio</h1>
+    <p>Utiliza nuestras herramientas para localizar contenido rápidamente.</p>
+  </header>
+
+  <div class="search-guide">
+    <div class="guide-item"><strong>Simple:</strong> Palabras clave.</div>
+    <div class="guide-item"><strong>Avanzada:</strong> Filtros por fecha y categoría.</div>
+    <div class="guide-item"><strong>Resultados:</strong> Listado con enlaces directos.</div>
+  </div>
+
+  <div class="search-card">
+    <div class="search-box-simple">
+      <label class="form-label">¿Qué estás buscando?</label>
+      <div class="search-input-group">
+        <input class="form-control" placeholder="Ej: menú, breadcrumbs..." [(ngModel)]="query" (keyup.enter)="doSearch()" />
+        <button class="btn-primary-custom" (click)="doSearch()">Buscar</button>
+        <button class="btn-link-clear" (click)="clear()">Limpiar</button>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="search-box-advanced">
+      <h4>Filtros avanzados</h4>
+      <div class="row-filters">
+        <div class="filter-group">
+         <h5><label class="form-label">Tipo de recurso</label></h5>
+          <select class="form-select" [(ngModel)]="filters.type" (change)="doSearch()">
+            <option value="todos">Todos</option>
+            <option value="pagina">Página</option>
+            <option value="seccion">Sección</option>
+          </select>
+        </div>
+        <div class="filter-group flex-grow">
+          <h5><label class="form-label">Sección o Tema</label></h5>
+          <select class="form-select" [(ngModel)]="filters.section" (change)="doSearch()">
+            <option value="todas">Todas</option>
+            <option *ngFor="let s of sections" [value]="s">{{ s }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-area">
+    <ng-container *ngIf="results$ | async as results">
+      
+      <div *ngIf="results.length === 0" class="empty-state">
+        <p>No se encontraron resultados. Intenta con otros términos.</p>
+      </div>
+
+      <div *ngIf="results.length > 0" class="results-list">
+        <a *ngFor="let item of results" class="result-item" [routerLink]="item.path">
+          <div class="result-content">
+            <span class="result-title">{{ item.title }}</span>
+            <p class="result-desc">{{ item.description }}</p>
+          </div>
+          <span class="result-badge">{{ item.section }}</span>
+        </a>
+      </div>
+
+    </ng-container>
+  </div>
+</div>

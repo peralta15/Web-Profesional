@@ -1,0 +1,168 @@
+/* --- Base y Centrado --- */
+body {
+  background-color: #f1f5f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.main-container {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  color: #1e293b;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+h4 {
+  color: #074564; /* Un azul marino oscuro muy elegante */
+  text-transform: uppercase; /* Opcional: para que se vea como un subtítulo de sección */
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  color: #055983;
+  text-transform: uppercase; /* Opcional: para que se vea como un subtítulo de sección */
+  font-size: 0.9rem;
+  letter-spacing: 0.5px; /* Un azul marino oscuro muy elegante */
+}
+
+/* --- Guía superior --- */
+.search-guide {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* --- Tarjeta de Búsqueda --- */
+.search-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom: 50px; /* Separación con los resultados */
+}
+
+/* --- Separación de Botones --- */
+.search-input-group {
+  display: flex;
+  gap: 12px; /* Espacio exacto entre input y botones */
+  align-items: center;
+}
+
+.btn-primary-custom {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-link-clear {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #475569;
+}
+
+/* --- Filtros --- */
+.row-filters {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.form-control, .form-select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+}
+
+.divider {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* --- Formato de Resultados (Tarjetas) --- */
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre cada resultado */
+}
+
+.result-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-3px);
+  border-color: #2563eb;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+}
+
+.result-title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.result-desc {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.result-badge {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
