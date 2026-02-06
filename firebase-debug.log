@@ -1,0 +1,19 @@
+[debug] [2026-02-05T22:07:36.726Z] ----------------------------------------------------------------------
+[debug] [2026-02-05T22:07:36.729Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-02-05T22:07:36.729Z] CLI Version:   15.5.1
+[debug] [2026-02-05T22:07:36.729Z] Platform:      win32
+[debug] [2026-02-05T22:07:36.730Z] Node Version:  v24.12.0
+[debug] [2026-02-05T22:07:36.730Z] Time:          Thu Feb 05 2026 16:07:36 GMT-0600 (hora estándar central)
+[debug] [2026-02-05T22:07:36.730Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\fatim\Downloads\Web profesional\sitio-estructura-busqueda\sitio-estructura
+

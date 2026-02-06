@@ -64,6 +64,18 @@ h1 {
     padding-left: 10px;
 }
 
+h3{
+    margin: 0;
+    font-size: 18px;
+    color: #000080; /* Azul marino clásico */
+}
+
+h4{
+    margin: 0;
+    font-size: 14px;
+    color: #4730a3;
+}
+
 .contenido h3 {
     margin: 0;
     font-size: 18px;
